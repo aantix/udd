@@ -1,0 +1,10 @@
+== Description
+
+User Driven Development.
+
+Perform usability testing, A/B testing and solicit feedback with ACTUAL HUMANS quickly using Mechanical Turk.
+
+
+== Copyright
+
+Copyright (c) 2012 - 2013 Jim Jones. See LICENSE for details.
