@@ -4,6 +4,39 @@ User Driven Development.
 
 Perform usability testing, A/B testing and solicit feedback with ACTUAL HUMANS quickly using Mechanical Turk.
 
+== TODO
+
+1) Rake udd
+  Brings up a list of tests that are stored in the config/udd.yml file
+
+  1. A standard test that just asks the Turker to fill out the form
+  2. An A/B style test
+
+	1a) Rake udd::install
+	  -- Installs the udd.yml file to the config/ directory
+	1b) Rake udd::tests
+	  -- Brings up all of the tests from the udd.yml file and will post to MT with the corresponding test params
+
+2) For Turkee; create udd branch
+
+Change the table name to udd_tests? -- Eh, maybe not needed...
+
+
+3) For the engine, the user creates a "test"; the url specified is either a restful route or a fully qualified url.
+
+
+  If the url has =~ /_path/ || /_url/
+    try to resolve it using a restful path (using Turkee)
+
+  Otherwise, pass in the :form_url option to Turkee
+
+4) Getting/retrieving results from MT
+
+	4a) Display in the engine/web page?
+	  - If you display them within the web page, you can make a fetch to grab all results prior to showing stats...
+
+
+5) Create an example that shows some sort of testing with Basecamp?
 
 == Copyright
 
