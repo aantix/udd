@@ -1,0 +1,14 @@
+feedback:
+  test1:
+    title: Requesting feedback for my website.
+    description: Look over this page and give me your initial five second impression.
+    reward: 0.05
+    path: welcome_path
+
+
+ab_testing:
+  test1:
+    title: Help me test my site.
+    description: Looking at this page, click on the link that is best action....
+    reward: 0.05
+    path: welcome_path
