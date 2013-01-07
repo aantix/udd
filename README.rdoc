@@ -38,6 +38,20 @@ Change the table name to udd_tests? -- Eh, maybe not needed...
 
 5) Create an example that shows some sort of testing with Basecamp?
 
+
+
+
+
+== Instructions
+
+1) rake udd:install
+
+Installs udd.yml and copies over turkee migrations.
+
+2) rake udd:install:migrations
+
+Installs the Test migrations.
+
 == Copyright
 
 Copyright (c) 2012 - 2013 Jim Jones. See LICENSE for details.

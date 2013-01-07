@@ -9,9 +9,4 @@ Bundler::GemHelper.install_tasks
 
 require 'rake/testtask'
 
-task :install do
-  installer = Udd::InstallGenerator.new
-  installer.install
-end
-
 task :default => :spec
