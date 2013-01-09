@@ -10,7 +10,8 @@ describe Udd::Runner do
     end
 
     it "creates the appropriate HIT (turkee task) and Test" do
-      Turkee::TurkeeTask.expects(:create_hit).once
+      #Turkee::TurkeeTask.expects(:create_hit).once
+      @creator.stubs(:host).returns("http://abc123.localtunnel.io")
       @creator.expects(:create_tunnel).once
 
       @creator.run(@test)

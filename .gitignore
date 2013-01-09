@@ -29,6 +29,7 @@ spec/dummy/tmp/
 *.sassc
 .rspec
 .redcar/
+spec/dummy/log/*.log
 .sass-cache
 /config/config.yml
 /config/database.yml

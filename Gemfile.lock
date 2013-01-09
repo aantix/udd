@@ -4,6 +4,7 @@ PATH
     udd: User Driven Development (0.0.1)
       localtunnel
       rails (~> 3.2.9)
+      rturk
       turkee
 
 GEM

@@ -1,6 +1,7 @@
 # Go to this page https://aws-portal.amazon.com/gp/aws/developer/account/index.html?action=access-key
 # to retrieve your AWS/Mechanical Turk access keys.
 
+require "rturk"
 AWSACCESSKEYID      = 'XXXXXXXXXXXXXXXXXX'
 AWSSECRETACCESSKEY  = 'YYYYYYYYYYYYYYYYYYYYYYYYYYYY'
 

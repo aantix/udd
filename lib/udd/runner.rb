@@ -12,11 +12,15 @@ module Udd
 
     def run(test)
       create_tunnel
-      turkee_task = Turkee::TurkeeTask.create_hit(@tunnel['host'], test["title"],  test["description"], nil,
+      turkee_task = Turkee::TurkeeTask.create_hit(host, test["title"],  test["description"], "Udd::Test".constantize,
                                     NUM_ASSIGNMENTS, test["reward"], LIFETIME, DURATION,
                                     {}, {}, {:form_url => test['url']})
 
       Test.create!(:url => test['url'], :task => turkee_task)
+    end
+
+    def host
+      @tunnel['host']
     end
 
     def create_tunnel

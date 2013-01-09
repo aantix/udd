@@ -8,36 +8,7 @@ require 'turkee'
 require 'active_record'
 require 'rake'
 
-
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
-
-ActiveRecord::Base.establish_connection(:adapter => "sqlite3", :database => ":memory:")
-ActiveRecord::Schema.define(:version => 1) do
-  create_table :turkee_tasks do |t|
-    t.string   "hit_url"
-    t.boolean  "sandbox"
-    t.string   "task_type"
-    t.text     "hit_title"
-    t.text     "hit_description"
-    t.string   "hit_id"
-    t.decimal  "hit_reward", :precision => 10, :scale => 2
-    t.integer  "hit_num_assignments"
-    t.integer  "hit_lifetime"
-    t.string   "form_url"
-    t.integer  "completed_assignments", :default => 0
-    t.boolean  "complete"
-    t.boolean  "expired"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "turkee_flow_id"
-    t.integer  "hit_duration"
-  end
-
-  create_table :surveys do |t|
-    t.string :answer
-  end
-end
-
 
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However,

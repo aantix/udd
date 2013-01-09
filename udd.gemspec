@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.9"
   s.add_dependency "turkee"
+  s.add_dependency "rturk"
   s.add_dependency "localtunnel"
   # s.add_dependency "jquery-rails"
 
