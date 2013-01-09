@@ -1,3 +1,5 @@
+require "localtunnel/tunnel"
+
 module Udd
   class Runner
     LIFETIME        = 1
@@ -14,11 +16,12 @@ module Udd
                                     NUM_ASSIGNMENTS, test["reward"], LIFETIME, DURATION,
                                     {}, {}, {:form_url => test['url']})
 
-      Test.create!(:url => test['url'])
+      Test.create!(:url => test['url'], :task => turkee_task)
     end
 
     def create_tunnel
       @tunnel = LocalTunnel::Tunnel.new(3000, nil)
+      @tunnel.register_tunnel
       @tunnel.start_tunnel
     end
   end
